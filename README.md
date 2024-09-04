@@ -71,7 +71,7 @@ It was a struggle to adjust the image so it didnt take over the whole screen and
 I think in the future I want to go more into the CSS documentation to add more elements and make the UI look more modern. 
 
 Generally I want to make it a habit to go to the documentation first instead of searching up questions I had because then I can familiarize myself with the documentation and can problem solve faster.
-
+ 
 
 ### Useful resources
 
