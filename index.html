@@ -3,75 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Recipe page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { 
+        font-size: 11px; 
+        text-align:center; 
+    }
+
+    h1,h2,h3{
+        padding-left: 20px;
+    }
+    h1,h2{
+    color: #8b6bc8;
+   }
+
+   .td{
+    color: #8b6bc8;
+   }
+
+    h2 + ul li::marker, h2 + ol li::marker{
+    color: #8b6bc8;
+   }
+
+   h3{
+    color: #2494ad;
+   }
+
+   h3 +ul li::marker{
+    color: #2494ad;
+   }
+
+   ul li, ol li {
+    padding-bottom: 10px;
+   }
+
+   ol li::marker {
+    font-weight: bold;
+   }
+    p{
+        padding-left:20px ;
+    }
+
+    body{
+        background-color:lavender ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        min-height: 100vh; /*full vieport height*/
+        overflow: auto; /*allows page scrolling if content overflows*/
+    }
+    .internal-round-cont {
+        border-radius: 15px;
+        background-color: #b8e8f3;
+        padding: 1px;
+        box-sizing: border-box; /*includes padding in total width and height*/
+    }
+    .rounded-container {
+        width: 700px;
+        max-width: 90%;
+        background-color: white;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 20px 0; /*adds margin to create space above and below*/ 
+        /* overflow: auto;  allows for srolling within the container */
+    }
+    .image-size {
+        border-radius: 15px;
+        max-width: 100%; /* ensure the image fits within the container width*/ 
+        height: auto; /* maintains aspect ratio */
+        display: block; /* removes extra space below the image*/
+        margin: 0 auto; /*centers the image if needed*/
+    }
+
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td{
+        border-bottom: 1px solid #d7dadb;
+        padding: 10px 20px;
+        vertical-align: middle;
+        text-align: left;
+    }
+    
   </style>
 </head>
-<body>
-
-  Simple Omelette Recipe
-
-  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
-
-  Preparation time
-
-  Total: Approximately 10 minutes
-  Preparation: 5 minutes
-  Cooking: 5 minutes
-
-  Ingredients
-
-  2-3 large eggs
-  Salt, to taste
-  Pepper, to taste
-  1 tablespoon of butter or oil
-  Optional fillings: cheese, diced vegetables, cooked meats, herbs
-
-  Instructions
-
-  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.
-
-  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
-
-  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.
-
-  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.
-
-  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.
-
-  Enjoy: Serve hot, with additional salt and pepper if needed.
-
-  Nutrition
-
-  The table below shows nutritional values per serving without the additional fillings.
-
-  Calories
-  277kcal
-
-  Carbs
-  0g
-
-  Protein
-  20g
-
-  Fat
-  22g
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <body>
+       <div class="rounded-container">
+            <div>
+                <img src="https://www.allrecipes.com/thmb/5aRY8tnjLZ2BJegTzy1DOUQjpZc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/23898-Dutch-Babies-dmfs-4x3-1450-3303f8da8ae54f1db55ed8366b71ec8e.jpg" alt="Dutch Oven Pancake" class="image-size">
+            </div>
+            <div>
+                <h1> Dutch Oven Pancake Recipe</h1>
+                <p>This large, fluffy pancake is excellent for breakfast, brunch, lunch and dessert any time of year.It's wonderful simply with sugar, syrup or preserves, but you also can serve it with fresh berries and whipped cream, apple slices cooked in butter and sugar or banana slices lightly cooked then dusted with brown sugar.</p>
+            </div>
+            <div class="internal-round-cont">
+                <h3>Preparation Time</h3>
+                <ul>
+                    <li><strong>Total:</strong> Approximately 40 minutes</li>
+                    <li><strong>Preparation:</strong> 10 minutes</li>
+                    <li><strong>Cooking:</strong> 30 minutes</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>3 large eggs, room temp.</li>
+                    <li>1/2 cup all-purpose flour</li>
+                    <li>1/2 cup whole milk, room temp</li>
+                    <li>1 tbsp sugar</li>
+                    <li>Pinch of nutmeg</li>
+                    <li>4 tbsp unsalted butter </li>
+                    <li>Syrup or powdered sugar</li>
+                </ul>
+            </div>
+            <hr/>
+            <div>
+                <h2>Instructions</h2>
+                <ol>
+                    <li><strong>Preheat:</strong> Heat oven to 425 degrees.</li>
+                    <li><strong>Mix Ingredients:</strong> Combine eggs, flour, milk, sugar and nutmeg in a blender jar and blend until very smooth. Batter may also be mixed by hand.</li>
+                    <li><strong>Prep the Pan and Bake:</strong> Place butter in a heavy 10-inch skillet and place in the oven. As soon as the butter has melted (watch it so it does not burn) add the batter to the pan, return pan to the oven and bake for 20 minutes, until the pancake is puffed and golden. Lower oven temperature to 300 degrees and bake 5 minutes longer.</li>
+                    <li><strong> Serve:</strong> Remove pancake from oven, cut into wedges and serve at once topped with syrup, preserves, confectioners' sugar or cinnamon sugar.</li>
+                </ol>
+            </div>
+            <hr/>
+            <div>
+                <h2>Nutrition</h2>
+                <p>The table below shows the nutritional values per serving.</p>
+                <table>
+                    <thead>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Calories</td>
+                            <td class="td"><strong>276kcal</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Carbs</td>
+                            <td class="td"><strong>24g</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Protein</td>
+                            <td class="td"><strong>8g</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td class="td"><strong>17g</strong></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+       </div>
+    </body>
 </html>
