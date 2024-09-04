@@ -36,6 +36,7 @@ p{
 }
 
 body{
+    font-family: 'Young Serif',serif;
     background-color:lavender ;
     display: flex;
     justify-content: center;
