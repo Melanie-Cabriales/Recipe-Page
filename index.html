@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   
-  <title>Frontend Mentor | Recipe page</title>
+  <title>Frontend Mentor | Recipe Page</title>
 
   <style>
     .attribution { 
@@ -45,7 +45,7 @@
     p{
         padding-left:20px ;
     }
-
+ 
     body{
         background-color:lavender ;
         display: flex;
@@ -62,8 +62,8 @@
         box-sizing: border-box; /*includes padding in total width and height*/
     }
     .rounded-container {
-        width: 700px;
-        max-width: 90%;
+        width: 100%;
+        max-width: 100%;
         background-color: white;
         border-radius: 15px;
         padding: 20px;
@@ -87,6 +87,13 @@
         padding: 10px 20px;
         vertical-align: middle;
         text-align: left;
+    }
+
+    @media (min-width:768px) {
+        .rounded-container {
+            width:700px; /*fixed width for larger screens*/
+            max-width: 90%;
+        }
     }
     
   </style>
